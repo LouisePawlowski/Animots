@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_settings"
+        android:layout_gravity="end"
+        android:contentDescription="@string/parameters"
+        android:scaleType="fitCenter"
+        app:tint="#646464" />
+
+    <ImageView
+        android:id="@+id/logoLapin"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/logo_lapin_vectoriel"
+        tools:ignore="ExtraText" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/border"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Animots"
+            android:textAlignment="center"
+            android:textSize="54sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="- Trouve le lapin -"
+            android:textAlignment="center"
+            android:textSize="35sp" />
+</LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/level1Button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Pour les apprentis"
+        app:backgroundTint="#B16248"
+        android:textSize="24sp"
+        android:fontFamily="casual"
+        android:layout_margin="10dp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/level2Button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Pour les courageux"
+        app:backgroundTint="#B16248"
+        android:textSize="24sp"
+        android:fontFamily="casual"
+        android:layout_margin="10dp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/level3Button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Pour les pros"
+        app:backgroundTint="#B16248"
+        android:textSize="24sp"
+        android:fontFamily="casual"
+        android:layout_margin="10dp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/scoresButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Meilleurs scores"
+        app:backgroundTint="#0889B8"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

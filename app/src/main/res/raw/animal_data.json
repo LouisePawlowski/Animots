@@ -1,0 +1,20 @@
+[
+  {"name": "ane", "pronoun": "l'"},
+  {"name": "bélier", "pronoun": "le "},
+  {"name": "bouc", "pronoun": "le "},
+  {"name": "chat", "pronoun": "le "},
+  {"name": "cheval", "pronoun": "le "},
+  {"name": "chèvre", "pronoun": "la "},
+  {"name": "chien", "pronoun": "le "},
+  {"name": "cochon", "pronoun": "le "},
+  {"name": "coq", "pronoun": "le "},
+  {"name": "dindon", "pronoun": "le "},
+  {"name": "mouton", "pronoun": "le "},
+  {"name": "oie", "pronoun": "l'"},
+  {"name": "poule", "pronoun": "la "},
+  {"name": "poussin", "pronoun": "le "},
+  {"name": "souris", "pronoun": "la "},
+  {"name": "taureau", "pronoun": "le "},
+  {"name": "vache", "pronoun": "la "},
+  {"name": "lapin", "pronoun": "le "}
+]

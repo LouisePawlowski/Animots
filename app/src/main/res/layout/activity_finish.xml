@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fond"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:context=".MainActivity"
+            tools:ignore="ExtraText" >
+
+
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_settings"
+            android:layout_gravity="right"
+            android:contentDescription="Paramètres"
+            android:scaleType="fitCenter"
+            app:tint="#646464" />
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="3dp"
+            android:background="@drawable/border"
+            >
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/logo_lapin_vectoriel"
+                tools:ignore="ExtraText" />
+
+            <TextView
+                android:id="@+id/successBanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C'est terminé !"
+                android:fontFamily="casual"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 points"
+                android:layout_marginTop="20dp"
+                android:fontFamily="casual"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <Spinner
+                    android:id="@+id/spinnerPlayers"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/spinner_with_arrow"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:text="Sauvegarder"
+                    android:fontFamily="casual"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:backgroundTint="#E3A978"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/homeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Menu"
+                android:fontFamily="casual"
+                android:textSize="20sp"
+                android:backgroundTint="#FFC107"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bestScorePopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:background="#9AFFFFFF"
+        android:fontFamily="serif-monospace"
+        android:padding="10dp"
+        android:shadowColor="#AA5F5F5F"
+        android:shadowDx="20"
+        android:shadowDy="20"
+        android:shadowRadius="8"
+        android:text="Nouveau Meilleur Score !"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#C80000"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</FrameLayout>
+
